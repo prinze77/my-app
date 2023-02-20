@@ -4,12 +4,12 @@ import  SoftPhone  from 'react-softphone'
 import { WebSocketInterface } from 'jssip';
 
 const config = {
-  domain: 'sip-server@your-domain.io', // sip-server@your-domain.io
-  uri: 'sip:sip-user@your-domain.io', // sip:sip-user@your-domain.io
-  password: 'secret', //  PASSWORD ,
-  ws_servers: 'wss://sip-user@your-domain.io:8089/ws', //ws server
-  sockets: new WebSocketInterface('wss://sip-server@your-domain.io:8089/ws'),
-  display_name: '***',//jssip Display Name
+  domain: 'your-asterisk-domain.io', // your-asterisk-domain.io
+  uri: 'sip:100@your-asterisk-domain.io', // sip:sip-user@your-asterisk-domain.io
+  password: 'xxx', // SIP EXTENSION  PASSWORD ,
+  ws_servers: 'wss://your-asterisk-domain.io:8089/ws', //ws server
+  sockets: new WebSocketInterface('wss://your-asterisk-domain.io:8089/ws'),
+  display_name: '100',//EXTENSION
   debug: false // Turn debug messages on
 
 };
